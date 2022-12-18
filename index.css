@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fs-5: 1.8rem;
+    --fw-500: 500;
+}
+.logo{
+    margin-left:5%;
+    margin-right: 0%;
+}
+.nav{
+    background: #d65108;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+header{
+    font-size: 40px;
+    margin-right: 4%;
+    margin-left: 62%;
+    color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1%;
+    margin-left: 25%;
+}
+a{
+    text-decoration: none;
+    font-size: xx-large;
+    transition: ease-out 0.4s;
+}
+a:hover{
+    transform: scale(1.2);
+}
+#browse{
+    border-radius: 5%;
+    font-size: 35px;
+    background: #d65108;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    border: 1px #d65108 solid;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-block: 10px 0;
+    width: max-content;
+}
+.main{
+    position: absolute;
+    min-width: 250px;
+    width: 250px;
+    margin-left: 9%;
+    margin-top: 7%;
+}
+#search{
+    font-size: 85px;
+}
+#explore{
+    font-size: 40px;
+}
+img{
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 500px;
+    height: 500px;
+
+}
+.meal-details-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+#modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.modalContent{
+    background-color: #d65108;
+    margin: 15% auto;
+    height: 450px;
+    width: 80%;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 5%;
+    color: #fff;
+    overflow-y: scroll;
+}
+@media screen and (max-width:600px){
+    .logo{
+        display: none;
+    }
+    a{
+        font-size:medium;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        margin-top: 75%;
+        margin-right: 60%;
+        overflow-x: hidden;
+    }
+    #search{
+        font-size: 45px;
+        text-align: center;
+    }
+    #explore{
+        font-size: 35px;
+        text-align: justify;
+    }
+    .meal-details-content{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 40%;
+    } 
+    .navbar{
+        margin-left: 5%;
+    }   
+}
+@media screen and (max-width: 992px){
+    #search{
+        font-size: 65px;
+    }
+    #explore{
+        font-size: 35px;
+    }
+    img{
+        width: 380px;
+        height: 380px;
+    }
+}
