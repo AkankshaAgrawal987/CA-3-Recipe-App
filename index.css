@@ -101,6 +101,9 @@ img{
     color: #fff;
     overflow-y: scroll;
 }
+footer{
+    text-align: center;
+}
 @media screen and (max-width:600px){
     .logo{
         display: none;
